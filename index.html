@@ -64,7 +64,7 @@
 
         hideElements();
         document.getElementById("wrapper").style=""; //removes display:none;
-        alert("Deploying takes time, but if shit happens or if you're waiting for more than 2 minutes just refresh the page. You will not pay if contract is not deployed correctly.\n\n Works on Ethereum, BSC, Polygon, Arbitrum and relative testnets.");
+        alert("Deploying takes time, but if shit happens or if you're waiting for more than 2 minutes just refresh the page. You will not pay if your contract is not deployed correctly.\n\nSimply select the network you wish to deploy your token on from Metamask, fill the form and deploy your token!\nWorks on Ethereum, BSC, Polygon, Arbitrum and relative testnets.");
 
     }
 
@@ -180,7 +180,7 @@
 
                                     <form>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div title="This is the amount of tokens that will be created." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Initial Supply </p>
 
@@ -188,7 +188,7 @@
 
                                         </div>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div title="This is the number of decimals that your token will have." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Decimals (1-18) </p>
 
@@ -226,7 +226,7 @@
 
                                     <form>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div title="This is the percentage of each transaction that will be reflected to all the holders of your token AND to a burn address, making your token deflationary while rewarding who holds it." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Holders Reward Fee </p>
 
@@ -242,7 +242,7 @@
 
                                     <form>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div  title="This is the maximum number of tokens that can be moved in a single transaction. It is an anti-whale mechanism." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Max Txs Amount </p>
 
@@ -281,7 +281,7 @@
 
                                     <form>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div title="This is the percentage of each transaction that will contribute to the liquidity pool of your token. Resulting LP tokens will be burned creating a price floor for your token." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Auto-LP </p>
 
@@ -297,7 +297,7 @@
 
                                     <form>
 
-                                        <div class="input-group" style="padding-bottom: 0.5rem;">
+                                        <div title="Adding liquidity every transaction could cost too much in gas fees. Instead, the contract will automatically add liquidity to the pool every X tokens accumulated in its balance (thanks to the liquidity fee). This number is X." class="input-group" style="padding-bottom: 0.5rem;">
 
                                             <p style="color:#333333;" class="form-control"> Tokens to add Liq. </p>
 
